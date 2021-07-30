@@ -1,0 +1,14 @@
+//
+//  FblFunctionMuster.pch
+//  FblFunctionMuster
+//
+//  Created by Fanbaili on 2021/7/13.
+//  Copyright © 2021 FblFunctionMuster. All rights reserved.
+//
+
+#ifndef FblFunctionMuster_pch
+#define FblFunctionMuster_pch
+
+#import "include.h"
+
+#endif /* FblFunctionMuster_pch */
