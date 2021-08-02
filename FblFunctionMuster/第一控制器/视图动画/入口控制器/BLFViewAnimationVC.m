@@ -39,6 +39,7 @@
                                            @[@"加载动画",@"BLFProgressLoadingVC"],
                                            @[@"加载等待动画",@"BLFWaittingLoadingVC"],
                                            @[@"环形计时器动画",@"BLFRingtimingAnimationVC"],
+                                           @[@"弹框封装",@"BLfTestPopViewVC"],
                                         ]];
     _selectCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {

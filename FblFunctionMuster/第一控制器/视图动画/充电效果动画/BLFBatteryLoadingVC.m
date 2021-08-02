@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = BLThemeColor;
+    self.view.backgroundColor = BLThemeEndColor;
     BLFBatteryLoadingView *batteryView = [[BLFBatteryLoadingView alloc]init];
     [self.view addSubview:batteryView];
     [batteryView mas_makeConstraints:^(MASConstraintMaker *make) {

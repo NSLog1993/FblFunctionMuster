@@ -125,7 +125,7 @@
     label.center = CGPointMake(view.frame.size.width/2, view.frame.size.height/2);
     label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont systemFontOfSize:18];
-    label.textColor = BLThemeColor;
+    label.textColor = BLThemeStartColor;
     [view addSubview:label];
     return label;
 }

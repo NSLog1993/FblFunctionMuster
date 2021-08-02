@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = BLThemeColor;
+    self.view.backgroundColor = BLThemeEndColor;
     
     //水波纹
     _waterView = [[BLFWaterWaveView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];

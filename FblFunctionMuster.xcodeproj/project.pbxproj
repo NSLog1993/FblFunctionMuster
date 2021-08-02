@@ -29,6 +29,8 @@
 		AD7C7DE026B3982600B67E35 /* BLFRingtimingAnimationV.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7C7DDF26B3982600B67E35 /* BLFRingtimingAnimationV.m */; };
 		AD7C7DE326B3984F00B67E35 /* BLFRingtimingAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7C7DE226B3984F00B67E35 /* BLFRingtimingAnimationVC.m */; };
 		AD7C7DE726B3CCA700B67E35 /* BLfAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7C7DE626B3CCA700B67E35 /* BLfAlertView.m */; };
+		AD7C7DEB26B3E54900B67E35 /* BLfPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7C7DEA26B3E54900B67E35 /* BLfPopView.m */; };
+		AD7C7DF326B3ECCD00B67E35 /* BLfTestPopViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7C7DF226B3ECCD00B67E35 /* BLfTestPopViewVC.m */; };
 		AD8D924F269E7DDB00C3E31A /* BLFSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8D924D269E7DDB00C3E31A /* BLFSecondVC.m */; };
 		AD8D9250269E7DDB00C3E31A /* BLFSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD8D924E269E7DDB00C3E31A /* BLFSecondVC.xib */; };
 		AD8D9255269E7DFB00C3E31A /* BLFThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8D9253269E7DFB00C3E31A /* BLFThirdVC.m */; };
@@ -92,6 +94,10 @@
 		AD7C7DE226B3984F00B67E35 /* BLFRingtimingAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFRingtimingAnimationVC.m; sourceTree = "<group>"; };
 		AD7C7DE526B3CCA700B67E35 /* BLfAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfAlertView.h; sourceTree = "<group>"; };
 		AD7C7DE626B3CCA700B67E35 /* BLfAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfAlertView.m; sourceTree = "<group>"; };
+		AD7C7DE926B3E54900B67E35 /* BLfPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfPopView.h; sourceTree = "<group>"; };
+		AD7C7DEA26B3E54900B67E35 /* BLfPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfPopView.m; sourceTree = "<group>"; };
+		AD7C7DF126B3ECCD00B67E35 /* BLfTestPopViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfTestPopViewVC.h; sourceTree = "<group>"; };
+		AD7C7DF226B3ECCD00B67E35 /* BLfTestPopViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfTestPopViewVC.m; sourceTree = "<group>"; };
 		AD8D924C269E7DDB00C3E31A /* BLFSecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLFSecondVC.h; sourceTree = "<group>"; };
 		AD8D924D269E7DDB00C3E31A /* BLFSecondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFSecondVC.m; sourceTree = "<group>"; };
 		AD8D924E269E7DDB00C3E31A /* BLFSecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLFSecondVC.xib; sourceTree = "<group>"; };
@@ -234,6 +240,7 @@
 		AD4EB690269FDAC900BC92BD /* 视图动画 */ = {
 			isa = PBXGroup;
 			children = (
+				AD7C7DE826B3E50D00B67E35 /* 弹框封装 */,
 				AD7C7DDD26B3978D00B67E35 /* 环形计时动画 */,
 				AD70851526A15C6D00410B0C /* 加载等待动画 */,
 				AD4EB6B526A014C300BC92BD /* 入口控制器 */,
@@ -345,13 +352,24 @@
 			path = "环形计时动画";
 			sourceTree = "<group>";
 		};
-		AD7C7DE426B3CC7900B67E35 /* 文本提示框 */ = {
+		AD7C7DE426B3CC7900B67E35 /* 提示框 */ = {
 			isa = PBXGroup;
 			children = (
 				AD7C7DE526B3CCA700B67E35 /* BLfAlertView.h */,
 				AD7C7DE626B3CCA700B67E35 /* BLfAlertView.m */,
 			);
-			path = "文本提示框";
+			path = "提示框";
+			sourceTree = "<group>";
+		};
+		AD7C7DE826B3E50D00B67E35 /* 弹框封装 */ = {
+			isa = PBXGroup;
+			children = (
+				AD7C7DF126B3ECCD00B67E35 /* BLfTestPopViewVC.h */,
+				AD7C7DF226B3ECCD00B67E35 /* BLfTestPopViewVC.m */,
+				AD7C7DE926B3E54900B67E35 /* BLfPopView.h */,
+				AD7C7DEA26B3E54900B67E35 /* BLfPopView.m */,
+			);
+			path = "弹框封装";
 			sourceTree = "<group>";
 		};
 		AD8D9241269E7D8200C3E31A /* 第二控制器 */ = {
@@ -427,7 +445,7 @@
 		ADE88853269D6C8D004DE9C7 /* 公共文件 */ = {
 			isa = PBXGroup;
 			children = (
-				AD7C7DE426B3CC7900B67E35 /* 文本提示框 */,
+				AD7C7DE426B3CC7900B67E35 /* 提示框 */,
 				AD8D929D269EB6BB00C3E31A /* 快速创建展示TableView */,
 				AD8D9279269E90E900C3E31A /* 颜色转图片 */,
 				ADF6D2C4269D833700A4A2AC /* UIButton点击动画特效 */,
@@ -607,9 +625,11 @@
 			files = (
 				AD4EB6DF26A02ED500BC92BD /* BLFWaterLoadingView.m in Sources */,
 				AD22395C269D3EBD00A809EB /* AppDelegate.m in Sources */,
+				AD7C7DF326B3ECCD00B67E35 /* BLfTestPopViewVC.m in Sources */,
 				AD7C7DE026B3982600B67E35 /* BLFRingtimingAnimationV.m in Sources */,
 				AD8D9286269E93B300C3E31A /* UIImage+BLFImageExtension.m in Sources */,
 				AD4EB6BC26A015E500BC92BD /* BLFWaterWaveView.m in Sources */,
+				AD7C7DEB26B3E54900B67E35 /* BLfPopView.m in Sources */,
 				AD8D9255269E7DFB00C3E31A /* BLFThirdVC.m in Sources */,
 				AD4EB693269FDAFB00BC92BD /* BLFViewAnimationVC.m in Sources */,
 				AD22395B269D3EBD00A809EB /* main.m in Sources */,

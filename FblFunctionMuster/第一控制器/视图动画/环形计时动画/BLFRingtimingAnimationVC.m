@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.whiteColor;
+    self.view.backgroundColor = BLThemeEndColor;
     BLFRingtimingAnimationV *processView = [[BLFRingtimingAnimationV alloc]initWithFrame:CGRectMake(50, 200, 300, 300)];
     processView.processTime = 10;
     [self.view addSubview:processView];

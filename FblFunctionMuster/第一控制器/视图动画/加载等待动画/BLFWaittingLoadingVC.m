@@ -13,7 +13,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = BLThemeColor;
+    self.view.backgroundColor = BLThemeEndColor;
     [BLFAlternatingMotionCircleV showLoadingWith:self.view];
 }
 

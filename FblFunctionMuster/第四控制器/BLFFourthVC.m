@@ -11,7 +11,7 @@
 #import "BLFQuicklyCreatTableviewCell.h"
 
 
-@interface BLFFourthVC ()
+@interface BLFFourthVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *dataSource;
 @property (strong, nonatomic) RACCommand *selectCommand;
@@ -21,42 +21,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self creatSubviews];
-    [self clickEvent];
+    self.view.backgroundColor = BLThemeEndColor;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    NSLog(@"我来了");
+    [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
-- (void)creatSubviews {
-    self.view.backgroundColor = UIColor.cyanColor;
-    self.navigationItem.title = @"第四个";
-    self.tableView = [[UITableView alloc]init];
-    [self.view addSubview:_tableView];
-    BLWeakSelf(self)
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+#pragma mark - 创建tableView
+- (void)creatTableView {
+    _tableView = [[UITableView alloc]init];
+    [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        BLStrongSelf(self)
         make.edges.equalTo(self.view);
     }];
-    self.dataSource = [NSMutableArray array];
-    [self.dataSource addObjectsFromArray:@[@[@"4",@"4",@"4",@"4",@"4",@"4",@"4",@"4",@"4",@"4"]]];
-    _selectCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
-        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-            [subscriber sendNext:input];
-            [subscriber sendCompleted];
-            return nil;
-        }];
-    }];
-    UINib *nib = [UINib nibWithNibName:@"BLFQuicklyCreatTableviewCell" bundle:nil];
-    [BLFQuicklyCreateTableview initWithTableview:self.tableView datasouceSignal:RACObserve(self, dataSource) selectCommand:self.selectCommand templateCellNib:nib];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
 }
 
-- (void)clickEvent {
-    [self.selectCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
-        NSLog(@"------>>%@",x);
-        [BLfAlertView showTextAlert:@"未获取到数据" withView:self.view];
-    }];
+#pragma mark - tableview datasource delegate
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    return cell;
 }
 
 @end

@@ -27,7 +27,7 @@
         textLabel.alpha = 0.8;
         } completion:^(BOOL finished) {
         }];
-    [UIView animateWithDuration:3.0 animations:^{
+    [UIView animateWithDuration:2.0 animations:^{
         textLabel.alpha = 0;
         } completion:^(BOOL finished) {
             [textLabel removeFromSuperview];
