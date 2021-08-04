@@ -28,7 +28,7 @@
 #pragma mark - 添加所有控制器
 - (void)settingTabbarController {
     //当前选中的为第一个控制器
-    self.selectedIndex = 0;
+    self.selectedIndex = 3;
     
     //创建四个item按钮
     _baritemArray = [NSMutableArray array];
@@ -144,6 +144,7 @@
     NSInteger index = [tabBar.items indexOfObject:item];
     if (self.selectedIndex == index) {
         [BLfAlertView showTextAlert:@"请不要重复选择控制器" withView:self.view];
+        return;
     }
     self.selectedIndex = index;
 }

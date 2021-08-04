@@ -36,7 +36,8 @@
         make.edges.equalTo(self.view);
     }];
     self.dataSource = [NSMutableArray array];
-    [self.dataSource addObjectsFromArray:@[@[@"视图动画",@"BLFViewAnimationVC"]]];
+    [self.dataSource addObjectsFromArray:@[@[@"视图动画",@"BLFViewAnimationVC"],
+                                            @[@"保存密码到钥匙串",@"BLfKeychainVC"],]];
     _selectCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             [subscriber sendNext:input];

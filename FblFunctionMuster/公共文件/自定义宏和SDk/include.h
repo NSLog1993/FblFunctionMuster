@@ -16,6 +16,7 @@
 #import <Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "BLfAlertView.h"
+#import "BLfVerticalButton.h"
 
 #pragma mark - 设备尺寸
 #define BLScreenBounds [UIScreen mainScreen].bounds
@@ -38,6 +39,12 @@
 #define BLThemeEndColor BLColorA(255,218,185,1.0);
 #define BLColorA(r,g,b,Alpha) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:Alpha]
 #define BLColorFromRGB(rgbValue,Alpha) ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(Alpha)])
+
+
+#pragma mark - 字体设置
+#define BLTextBroadFont(s) [UIFont fontWithName:@"HelveticaNeue-Bold" size:s]//加粗
+#define BLTextSlenderFont(s) [UIFont fontWithName:@"CourierNewPSMT" size:s] //细
+
 
 #pragma mark - 判断是否是iPhone X系列
 #import <UIKit/UIKit.h>

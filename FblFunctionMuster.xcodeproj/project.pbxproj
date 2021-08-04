@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0C667B26BAB122001BDA5F /* BLfKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0C667A26BAB122001BDA5F /* BLfKeychainTool.m */; };
+		AD0C668226BAB70B001BDA5F /* BLfKeychainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0C668126BAB70B001BDA5F /* BLfKeychainVC.m */; };
 		AD22395B269D3EBD00A809EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD223950269D3EBD00A809EB /* main.m */; };
 		AD22395C269D3EBD00A809EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD223951269D3EBD00A809EB /* AppDelegate.m */; };
 		AD22395E269D3EBD00A809EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD223955269D3EBD00A809EB /* Assets.xcassets */; };
@@ -24,6 +26,9 @@
 		AD4EB6CE26A0257B00BC92BD /* BLFInstallView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4EB6CD26A0257B00BC92BD /* BLFInstallView.m */; };
 		AD4EB6D426A027B600BC92BD /* BLFLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4EB6D326A027B600BC92BD /* BLFLineView.m */; };
 		AD4EB6DF26A02ED500BC92BD /* BLFWaterLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4EB6DE26A02ED500BC92BD /* BLFWaterLoadingView.m */; };
+		AD6793A126B786F60056D097 /* BLfTableviewHeaderV.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6793A026B786F60056D097 /* BLfTableviewHeaderV.m */; };
+		AD6793A526B79B600056D097 /* BLfVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6793A426B79B600056D097 /* BLfVerticalButton.m */; };
+		AD6793B226B7D7500056D097 /* BLfMyOrderFormV.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6793B126B7D7500056D097 /* BLfMyOrderFormV.m */; };
 		AD70851A26A15CFA00410B0C /* BLFWaittingLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD70851926A15CFA00410B0C /* BLFWaittingLoadingVC.m */; };
 		AD70851E26A15D9600410B0C /* BLFAlternatingMotionCircleV.m in Sources */ = {isa = PBXBuildFile; fileRef = AD70851D26A15D9600410B0C /* BLFAlternatingMotionCircleV.m */; };
 		AD7C7DE026B3982600B67E35 /* BLFRingtimingAnimationV.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7C7DDF26B3982600B67E35 /* BLFRingtimingAnimationV.m */; };
@@ -56,6 +61,10 @@
 		1F8ABE03F01B69FAC05525A7 /* Pods_FblFunctionMuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FblFunctionMuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		872175A5E21EFA3299632518 /* Pods-FblFunctionMuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FblFunctionMuster.debug.xcconfig"; path = "Target Support Files/Pods-FblFunctionMuster/Pods-FblFunctionMuster.debug.xcconfig"; sourceTree = "<group>"; };
 		A17393A9119FBE82E64EA677 /* Pods-FblFunctionMuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FblFunctionMuster.release.xcconfig"; path = "Target Support Files/Pods-FblFunctionMuster/Pods-FblFunctionMuster.release.xcconfig"; sourceTree = "<group>"; };
+		AD0C667926BAB122001BDA5F /* BLfKeychainTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfKeychainTool.h; sourceTree = "<group>"; };
+		AD0C667A26BAB122001BDA5F /* BLfKeychainTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfKeychainTool.m; sourceTree = "<group>"; };
+		AD0C668026BAB70B001BDA5F /* BLfKeychainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfKeychainVC.h; sourceTree = "<group>"; };
+		AD0C668126BAB70B001BDA5F /* BLfKeychainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfKeychainVC.m; sourceTree = "<group>"; };
 		AD22394E269D3EBD00A809EB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD223950269D3EBD00A809EB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD223951269D3EBD00A809EB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +93,12 @@
 		AD4EB6D326A027B600BC92BD /* BLFLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFLineView.m; sourceTree = "<group>"; };
 		AD4EB6DD26A02ED500BC92BD /* BLFWaterLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLFWaterLoadingView.h; sourceTree = "<group>"; };
 		AD4EB6DE26A02ED500BC92BD /* BLFWaterLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFWaterLoadingView.m; sourceTree = "<group>"; };
+		AD67939F26B786F60056D097 /* BLfTableviewHeaderV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfTableviewHeaderV.h; sourceTree = "<group>"; };
+		AD6793A026B786F60056D097 /* BLfTableviewHeaderV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfTableviewHeaderV.m; sourceTree = "<group>"; };
+		AD6793A326B79B600056D097 /* BLfVerticalButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfVerticalButton.h; sourceTree = "<group>"; };
+		AD6793A426B79B600056D097 /* BLfVerticalButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfVerticalButton.m; sourceTree = "<group>"; };
+		AD6793B026B7D7500056D097 /* BLfMyOrderFormV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfMyOrderFormV.h; sourceTree = "<group>"; };
+		AD6793B126B7D7500056D097 /* BLfMyOrderFormV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfMyOrderFormV.m; sourceTree = "<group>"; };
 		AD70851826A15CFA00410B0C /* BLFWaittingLoadingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLFWaittingLoadingVC.h; sourceTree = "<group>"; };
 		AD70851926A15CFA00410B0C /* BLFWaittingLoadingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFWaittingLoadingVC.m; sourceTree = "<group>"; };
 		AD70851C26A15D9600410B0C /* BLFAlternatingMotionCircleV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLFAlternatingMotionCircleV.h; sourceTree = "<group>"; };
@@ -330,6 +345,94 @@
 			path = "波浪";
 			sourceTree = "<group>";
 		};
+		AD67939B26B7863C0056D097 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D9258269E7E1300C3E31A /* BLFFourthVC.h */,
+				AD8D9259269E7E1300C3E31A /* BLFFourthVC.m */,
+				AD8D925A269E7E1300C3E31A /* BLFFourthVC.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AD67939D26B7865E0056D097 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD6793AF26B7D7040056D097 /* 头部View */,
+				AD6793AE26B7D6890056D097 /* 推荐工具View */,
+				AD6793AD26B7D6780056D097 /* 我的游戏View */,
+				AD6793AC26B7D64D0056D097 /* 我的钱包View */,
+				AD6793AB26B7D63F0056D097 /* 我的订单View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD67939E26B786650056D097 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD6793A226B79B280056D097 /* 垂直布局的Button */ = {
+			isa = PBXGroup;
+			children = (
+				AD6793A326B79B600056D097 /* BLfVerticalButton.h */,
+				AD6793A426B79B600056D097 /* BLfVerticalButton.m */,
+			);
+			path = "垂直布局的Button";
+			sourceTree = "<group>";
+		};
+		AD6793AB26B7D63F0056D097 /* 我的订单View */ = {
+			isa = PBXGroup;
+			children = (
+				AD6793B026B7D7500056D097 /* BLfMyOrderFormV.h */,
+				AD6793B126B7D7500056D097 /* BLfMyOrderFormV.m */,
+			);
+			path = "我的订单View";
+			sourceTree = "<group>";
+		};
+		AD6793AC26B7D64D0056D097 /* 我的钱包View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的钱包View";
+			sourceTree = "<group>";
+		};
+		AD6793AD26B7D6780056D097 /* 我的游戏View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的游戏View";
+			sourceTree = "<group>";
+		};
+		AD6793AE26B7D6890056D097 /* 推荐工具View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "推荐工具View";
+			sourceTree = "<group>";
+		};
+		AD6793AF26B7D7040056D097 /* 头部View */ = {
+			isa = PBXGroup;
+			children = (
+				AD67939F26B786F60056D097 /* BLfTableviewHeaderV.h */,
+				AD6793A026B786F60056D097 /* BLfTableviewHeaderV.m */,
+			);
+			path = "头部View";
+			sourceTree = "<group>";
+		};
+		AD6793B326B7E3100056D097 /* 保存密码到钥匙串 */ = {
+			isa = PBXGroup;
+			children = (
+				AD0C667926BAB122001BDA5F /* BLfKeychainTool.h */,
+				AD0C667A26BAB122001BDA5F /* BLfKeychainTool.m */,
+				AD0C668026BAB70B001BDA5F /* BLfKeychainVC.h */,
+				AD0C668126BAB70B001BDA5F /* BLfKeychainVC.m */,
+			);
+			path = "保存密码到钥匙串";
+			sourceTree = "<group>";
+		};
 		AD70851526A15C6D00410B0C /* 加载等待动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +488,7 @@
 		AD8D9242269E7D8200C3E31A /* 第一控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				AD6793B326B7E3100056D097 /* 保存密码到钥匙串 */,
 				AD4EB690269FDAC900BC92BD /* 视图动画 */,
 				AD8D925F269E7E2F00C3E31A /* BLFFirstVC.h */,
 				AD8D9260269E7E2F00C3E31A /* BLFFirstVC.m */,
@@ -396,9 +500,9 @@
 		AD8D9243269E7D8200C3E31A /* 第四控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				AD8D9258269E7E1300C3E31A /* BLFFourthVC.h */,
-				AD8D9259269E7E1300C3E31A /* BLFFourthVC.m */,
-				AD8D925A269E7E1300C3E31A /* BLFFourthVC.xib */,
+				AD67939E26B786650056D097 /* ViewModel */,
+				AD67939D26B7865E0056D097 /* View */,
+				AD67939B26B7863C0056D097 /* ViewController */,
 			);
 			path = "第四控制器";
 			sourceTree = "<group>";
@@ -445,6 +549,7 @@
 		ADE88853269D6C8D004DE9C7 /* 公共文件 */ = {
 			isa = PBXGroup;
 			children = (
+				AD6793A226B79B280056D097 /* 垂直布局的Button */,
 				AD7C7DE426B3CC7900B67E35 /* 提示框 */,
 				AD8D929D269EB6BB00C3E31A /* 快速创建展示TableView */,
 				AD8D9279269E90E900C3E31A /* 颜色转图片 */,
@@ -635,19 +740,24 @@
 				AD22395B269D3EBD00A809EB /* main.m in Sources */,
 				AD4EB6AC26A0033E00BC92BD /* BLFBatteryLoadingVC.m in Sources */,
 				AD8D9262269E7E2F00C3E31A /* BLFFirstVC.m in Sources */,
+				AD6793B226B7D7500056D097 /* BLfMyOrderFormV.m in Sources */,
 				AD7C7DE326B3984F00B67E35 /* BLFRingtimingAnimationVC.m in Sources */,
 				ADF6D2C7269D83A000A4A2AC /* BLFParticleAnimationButton.m in Sources */,
 				AD8D9291269EB42900C3E31A /* SceneDelegate.m in Sources */,
+				AD0C668226BAB70B001BDA5F /* BLfKeychainVC.m in Sources */,
 				AD70851E26A15D9600410B0C /* BLFAlternatingMotionCircleV.m in Sources */,
 				AD7C7DE726B3CCA700B67E35 /* BLfAlertView.m in Sources */,
 				AD4EB6D426A027B600BC92BD /* BLFLineView.m in Sources */,
 				AD8D92B0269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.m in Sources */,
 				AD8D92A8269EC03900C3E31A /* BLFQuicklyCreateTableview.m in Sources */,
+				AD0C667B26BAB122001BDA5F /* BLfKeychainTool.m in Sources */,
 				ADF6D2C2269D805E00A4A2AC /* BLFCustomTabbarController.m in Sources */,
 				AD4EB6C926A0241200BC92BD /* BLFCircleView.m in Sources */,
 				ADE88858269D6CD5004DE9C7 /* BLCustomNavigationController.m in Sources */,
 				AD4EB6B826A0156700BC92BD /* BLFProgressLoadingVC.m in Sources */,
+				AD6793A126B786F60056D097 /* BLfTableviewHeaderV.m in Sources */,
 				AD8D925B269E7E1300C3E31A /* BLFFourthVC.m in Sources */,
+				AD6793A526B79B600056D097 /* BLfVerticalButton.m in Sources */,
 				AD70851A26A15CFA00410B0C /* BLFWaittingLoadingVC.m in Sources */,
 				AD4EB6CE26A0257B00BC92BD /* BLFInstallView.m in Sources */,
 				AD8D924F269E7DDB00C3E31A /* BLFSecondVC.m in Sources */,
@@ -798,7 +908,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = AC376MY52H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FblFunctionMuster/启动/FblFunctionMuster.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/FblFunctionMuster/启动/FblFunctionMuster.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -806,6 +923,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_CFLAGS = (
+					"-DSQLITE_HAS_CODEC",
+					"-DSQLITE_TEMP_STORE=2",
+					"-DSQLITE_THREADSAFE",
+					"-DSQLCIPHER_CRYPTO_CC",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = fbl.FblFunctionMuster.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -821,6 +945,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = AC376MY52H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FblFunctionMuster/启动/FblFunctionMuster.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FblFunctionMuster/启动/FblFunctionMuster.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -829,6 +954,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_CFLAGS = (
+					"-DSQLITE_HAS_CODEC",
+					"-DSQLITE_TEMP_STORE=2",
+					"-DSQLITE_THREADSAFE",
+					"-DSQLCIPHER_CRYPTO_CC",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = fbl.FblFunctionMuster.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

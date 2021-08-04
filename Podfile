@@ -6,6 +6,7 @@ target 'FblFunctionMuster' do
 pod 'ReactiveObjC'
 pod 'MBProgressHUD'
 pod 'Masonry'
+#pod 'FMDB/SQLCipher'
 #pod 'MJRefresh'
 
 end
