@@ -10,6 +10,7 @@
 
 @implementation BLfKeychainTool
 
+//初始化字典
 + (NSMutableDictionary *)getKeychainQuery:(NSString *)service {
     return [NSMutableDictionary dictionaryWithObjectsAndKeys:
             (__bridge_transfer id)kSecClassGenericPassword,
@@ -24,6 +25,7 @@
 //保存
 + (void)saveKeychainValue:(NSString *)sValue key:(NSString *)sKey {
     NSMutableDictionary * keychainQuery = [self getKeychainQuery:sKey];
+    //删除旧的
     SecItemDelete((__bridge_retained CFDictionaryRef)keychainQuery);
     if (@available(iOS 11.0, *)) {
         NSError *archiveError;
@@ -31,6 +33,7 @@
     }else {
         [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:sValue] forKey:(__bridge_transfer id)kSecValueData];
     }
+    //添加新的
     SecItemAdd((__bridge_retained CFDictionaryRef)keychainQuery, NULL);
     
 }
@@ -39,7 +42,7 @@
 + (NSString *)readKeychainValue:(NSString *)sKey {
     NSString *ret = nil;
     NSMutableDictionary *keychainQuery = [self getKeychainQuery:sKey];
-        [keychainQuery setObject:(id)kCFBooleanTrue forKey:(__bridge_transfer id)kSecReturnData];
+    [keychainQuery setObject:(id)kCFBooleanTrue forKey:(__bridge_transfer id)kSecReturnData];
     [keychainQuery setObject:(__bridge_transfer id)kSecMatchLimitOne forKey:(__bridge_transfer id)kSecMatchLimit];
     CFDataRef keyData = NULL;
     if (SecItemCopyMatching((__bridge CFDictionaryRef)keychainQuery, (CFTypeRef *)&keyData) == noErr) {
@@ -50,8 +53,8 @@
             }else {
                 ret = (NSString *)[NSKeyedUnarchiver unarchiveObjectWithData:(__bridge NSData *)keyData];
             }
-        } @catch (NSException *e) {
-            NSLog(@"Unarchive of %@ failed: %@", sKey, e);
+        } @catch (NSException *error) {
+            NSLog(@"Unarchive of %@ failed: %@", sKey, error);
         } @finally {
             
         }
