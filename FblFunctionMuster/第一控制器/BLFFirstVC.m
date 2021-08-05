@@ -37,7 +37,8 @@
     }];
     self.dataSource = [NSMutableArray array];
     [self.dataSource addObjectsFromArray:@[@[@"视图动画",@"BLFViewAnimationVC"],
-                                            @[@"保存密码到钥匙串",@"BLfKeychainVC"],]];
+                                           @[@"保存密码到钥匙串",@"BLfKeychainVC"],
+                                           @[@"AES加密的GCM模式",@"BLfAesGcmVC"],]];
     _selectCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             [subscriber sendNext:input];

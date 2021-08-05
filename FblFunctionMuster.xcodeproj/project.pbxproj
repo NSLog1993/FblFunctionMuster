@@ -51,6 +51,9 @@
 		AD8D92B0269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8D92AE269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.m */; };
 		AD8D92B1269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD8D92AF269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.xib */; };
 		AD8DAD8B269D578B00A1F496 /* FblFunctionMuster.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD8DAD8A269D578B00A1F496 /* FblFunctionMuster.plist */; };
+		AD9FE2B926BB8C1100ED14BA /* BLfAesGcmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FE2B826BB8C1100ED14BA /* BLfAesGcmVC.m */; };
+		AD9FE2BF26BB93C500ED14BA /* BLfSQLCipherEncryptDataBaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FE2BC26BB93C500ED14BA /* BLfSQLCipherEncryptDataBaseHelper.m */; };
+		AD9FE2C026BB93C500ED14BA /* BLfSQLCipherEncryptDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FE2BE26BB93C500ED14BA /* BLfSQLCipherEncryptDataBase.m */; };
 		ADE88858269D6CD5004DE9C7 /* BLCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE88857269D6CD5004DE9C7 /* BLCustomNavigationController.m */; };
 		ADF6D2C2269D805E00A4A2AC /* BLFCustomTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF6D2C1269D805E00A4A2AC /* BLFCustomTabbarController.m */; };
 		ADF6D2C7269D83A000A4A2AC /* BLFParticleAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF6D2C6269D83A000A4A2AC /* BLFParticleAnimationButton.m */; };
@@ -136,6 +139,12 @@
 		AD8D92AE269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFQuicklyCreatTableviewCell.m; sourceTree = "<group>"; };
 		AD8D92AF269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLFQuicklyCreatTableviewCell.xib; sourceTree = "<group>"; };
 		AD8DAD8A269D578B00A1F496 /* FblFunctionMuster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FblFunctionMuster.plist; sourceTree = "<group>"; };
+		AD9FE2B726BB8C1100ED14BA /* BLfAesGcmVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLfAesGcmVC.h; sourceTree = "<group>"; };
+		AD9FE2B826BB8C1100ED14BA /* BLfAesGcmVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLfAesGcmVC.m; sourceTree = "<group>"; };
+		AD9FE2BB26BB93C500ED14BA /* BLfSQLCipherEncryptDataBaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLfSQLCipherEncryptDataBaseHelper.h; sourceTree = "<group>"; };
+		AD9FE2BC26BB93C500ED14BA /* BLfSQLCipherEncryptDataBaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLfSQLCipherEncryptDataBaseHelper.m; sourceTree = "<group>"; };
+		AD9FE2BD26BB93C500ED14BA /* BLfSQLCipherEncryptDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLfSQLCipherEncryptDataBase.h; sourceTree = "<group>"; };
+		AD9FE2BE26BB93C500ED14BA /* BLfSQLCipherEncryptDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLfSQLCipherEncryptDataBase.m; sourceTree = "<group>"; };
 		ADE88856269D6CD5004DE9C7 /* BLCustomNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCustomNavigationController.h; sourceTree = "<group>"; };
 		ADE88857269D6CD5004DE9C7 /* BLCustomNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCustomNavigationController.m; sourceTree = "<group>"; };
 		ADE8885C269D6E7C004DE9C7 /* include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = include.h; sourceTree = "<group>"; };
@@ -488,6 +497,8 @@
 		AD8D9242269E7D8200C3E31A /* 第一控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				AD9FE2BA26BB938200ED14BA /* 对数据库加密 */,
+				AD9FE2B626BB8BD700ED14BA /* AES加密的GCM模式 */,
 				AD6793B326B7E3100056D097 /* 保存密码到钥匙串 */,
 				AD4EB690269FDAC900BC92BD /* 视图动画 */,
 				AD8D925F269E7E2F00C3E31A /* BLFFirstVC.h */,
@@ -536,6 +547,26 @@
 				AD8D92AF269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.xib */,
 			);
 			path = "快速创建展示TableView";
+			sourceTree = "<group>";
+		};
+		AD9FE2B626BB8BD700ED14BA /* AES加密的GCM模式 */ = {
+			isa = PBXGroup;
+			children = (
+				AD9FE2B726BB8C1100ED14BA /* BLfAesGcmVC.h */,
+				AD9FE2B826BB8C1100ED14BA /* BLfAesGcmVC.m */,
+			);
+			path = "AES加密的GCM模式";
+			sourceTree = "<group>";
+		};
+		AD9FE2BA26BB938200ED14BA /* 对数据库加密 */ = {
+			isa = PBXGroup;
+			children = (
+				AD9FE2BD26BB93C500ED14BA /* BLfSQLCipherEncryptDataBase.h */,
+				AD9FE2BE26BB93C500ED14BA /* BLfSQLCipherEncryptDataBase.m */,
+				AD9FE2BB26BB93C500ED14BA /* BLfSQLCipherEncryptDataBaseHelper.h */,
+				AD9FE2BC26BB93C500ED14BA /* BLfSQLCipherEncryptDataBaseHelper.m */,
+			);
+			path = "对数据库加密";
 			sourceTree = "<group>";
 		};
 		ADE8883D269D5C4E004DE9C7 /* 启动图图片 */ = {
@@ -735,6 +766,7 @@
 				AD8D9286269E93B300C3E31A /* UIImage+BLFImageExtension.m in Sources */,
 				AD4EB6BC26A015E500BC92BD /* BLFWaterWaveView.m in Sources */,
 				AD7C7DEB26B3E54900B67E35 /* BLfPopView.m in Sources */,
+				AD9FE2BF26BB93C500ED14BA /* BLfSQLCipherEncryptDataBaseHelper.m in Sources */,
 				AD8D9255269E7DFB00C3E31A /* BLFThirdVC.m in Sources */,
 				AD4EB693269FDAFB00BC92BD /* BLFViewAnimationVC.m in Sources */,
 				AD22395B269D3EBD00A809EB /* main.m in Sources */,
@@ -749,6 +781,7 @@
 				AD7C7DE726B3CCA700B67E35 /* BLfAlertView.m in Sources */,
 				AD4EB6D426A027B600BC92BD /* BLFLineView.m in Sources */,
 				AD8D92B0269ED02400C3E31A /* BLFQuicklyCreatTableviewCell.m in Sources */,
+				AD9FE2B926BB8C1100ED14BA /* BLfAesGcmVC.m in Sources */,
 				AD8D92A8269EC03900C3E31A /* BLFQuicklyCreateTableview.m in Sources */,
 				AD0C667B26BAB122001BDA5F /* BLfKeychainTool.m in Sources */,
 				ADF6D2C2269D805E00A4A2AC /* BLFCustomTabbarController.m in Sources */,
@@ -759,6 +792,7 @@
 				AD8D925B269E7E1300C3E31A /* BLFFourthVC.m in Sources */,
 				AD6793A526B79B600056D097 /* BLfVerticalButton.m in Sources */,
 				AD70851A26A15CFA00410B0C /* BLFWaittingLoadingVC.m in Sources */,
+				AD9FE2C026BB93C500ED14BA /* BLfSQLCipherEncryptDataBase.m in Sources */,
 				AD4EB6CE26A0257B00BC92BD /* BLFInstallView.m in Sources */,
 				AD8D924F269E7DDB00C3E31A /* BLFSecondVC.m in Sources */,
 				AD4EB69F269FFFED00BC92BD /* BLFBatteryLoadingView.m in Sources */,

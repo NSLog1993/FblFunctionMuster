@@ -1,24 +1,40 @@
 PODS:
+  - AesGcm (1.2.2)
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - ReactiveObjC (3.1.1)
+  - SQLCipher (4.4.3):
+    - SQLCipher/standard (= 4.4.3)
+  - SQLCipher/common (4.4.3)
+  - SQLCipher/standard (4.4.3):
+    - SQLCipher/common
 
 DEPENDENCIES:
+  - AesGcm
+  - FMDB/SQLCipher
   - Masonry
   - MBProgressHUD
   - ReactiveObjC
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AesGcm
+    - FMDB
     - Masonry
     - MBProgressHUD
     - ReactiveObjC
+    - SQLCipher
 
 SPEC CHECKSUMS:
+  AesGcm: 14d70d3a321e92d3a773a9191c28b5ac534fb278
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SQLCipher: 155ffeafc9ac102e5c9b68e3e9a1297a98a27096
 
-PODFILE CHECKSUM: 4e86b67c6539212675f801b4694cb296468eb8fd
+PODFILE CHECKSUM: fb2cc0a49d59ad8e3c489007542084b8396e700f
 
 COCOAPODS: 1.9.2

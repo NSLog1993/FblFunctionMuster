@@ -3,4 +3,22 @@
    uuid = "80B09F9C-6E2D-4438-A041-EB22D5715EF4"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D258F3D-038D-4162-8624-40F86B423B35"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FblFunctionMuster/&#x7b2c;&#x4e00;&#x63a7;&#x5236;&#x5668;/AES&#x52a0;&#x5bc6;&#x7684;GCM&#x6a21;&#x5f0f;/BLfAesGcmVC.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
